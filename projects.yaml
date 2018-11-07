@@ -18,7 +18,7 @@ projects:
     status: "-"
     command_line:
       - 'iovisor,mininet,opennetworkinglab,opensecuritycontroller,open-switch,p4lang,openbmp,tungstenfabric,opencord'
-    start_date: 2014-01-02T00:00:00Z
+    start_date: 2014-01-01T00:00:00Z
     join_date: null
     psql_db: lfn
     main_repo: 'iovisor/bcc'
