@@ -31,8 +31,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 4,
-  "iteration": 1535964120450,
+  "id": 8,
+  "iteration": 1541601879786,
   "links": [],
   "panels": [
     {
@@ -85,7 +85,9 @@
           "alias": "",
           "dsType": "influxdb",
           "format": "time_series",
+          "group": [],
           "groupBy": [],
+          "metricColumn": "none",
           "orderByTime": "ASC",
           "policy": "default",
           "query": "SELECT \"value\" FROM \"events_h\" WHERE $timeFilter",
@@ -103,7 +105,15 @@
               }
             ]
           ],
-          "tags": []
+          "tags": [],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
         }
       ],
       "thresholds": [],
@@ -170,7 +180,7 @@
       "description": "https://github.com/cncf/devstats",
       "folderId": 0,
       "gridPos": {
-        "h": 7,
+        "h": 32,
         "w": 24,
         "x": 0,
         "y": 6
@@ -267,5 +277,5 @@
   "timezone": "",
   "title": "Dashboards",
   "uid": "8",
-  "version": 6
+  "version": 3
 }
