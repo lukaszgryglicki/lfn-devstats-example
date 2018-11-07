@@ -12,6 +12,7 @@ update gha_repos set repo_group = 'p4language' where org_login = 'p4lang';
 update gha_repos set repo_group = 'OpenBMP' where org_login = 'openbmp';
 update gha_repos set repo_group = 'Tungsten Fabric' where org_login = 'tungstenfabric';
 update gha_repos set repo_group = 'CORD' where org_login = 'opencord';
+update gha_repos set repo_group = null where org_login is null;
 
 select
   repo_group,
