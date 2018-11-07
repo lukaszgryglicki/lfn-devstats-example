@@ -37,6 +37,6 @@ do
   then
     ./$proj/reinit.sh || exit 1
   else
-    GHA2DB_PROJECT=$proj PG_DB=$db ./shared/reinit.sh || exit 2
+    GHA2DB_GHAPISKIP=1 GHA2DB_PROJECT=$proj PG_DB=$db ./shared/reinit.sh || exit 2
   fi
 done

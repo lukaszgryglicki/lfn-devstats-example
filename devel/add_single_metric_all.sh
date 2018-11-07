@@ -22,7 +22,7 @@ fi
 for proj in $all
 do
   db=$proj
-  GHA2DB_PROJECT=$proj PG_DB=$db ./devel/add_single_metric.sh || exit 2
+  GHA2DB_GHAPISKIP=1 GHA2DB_PROJECT=$proj PG_DB=$db ./devel/add_single_metric.sh || exit 2
 done
 
 echo 'OK'
