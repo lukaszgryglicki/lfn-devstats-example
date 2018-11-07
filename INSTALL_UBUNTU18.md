@@ -59,10 +59,10 @@ Prerequisites:
     - `PG_PASS=... PG_PASS_RO=... PG_PASS_TEAM=... ./deploy.sh`.
     - If you are adding next project use `PG_PASS=... ./deploy_next.sh` instead.
     - You can also take a look at DevStats' `ADDING_NEW_PROJECT.md` file for more info about setting up new projects.
-    - You should end up with Grafana running on port 3001 on your server's IP: `http://X.Y.Z.V:3001`.
-    - This deployment uses `147.75.105.130:3001`.
+    - You should end up with Grafana running on port 3001 and 3002 on your server's IP: `http://X.Y.Z.V:3002`.
+    - This deployment uses `147.75.105.130:3002`.
 11. Configure Grafana
-    - Login as "admin/admin" to `http://X.Y.Z.V:3001`, change password to something more secure.
+    - Login as "admin/admin" to `http://X.Y.Z.V:3002`, change password to something more secure.
     - Choose "Add data source" or Configuration -> data sources, then add PostgreSQL DB with those settings:
     - Name "psql", Type "PostgreSQL", host "127.0.0.1:5432", database "your_project" (`homebrew` in this case), user "ro_user" (this is the select-only user for psql), password you used for `PG_PASS_RO`, ssl-mode "disabled".
     - Run `devel/put_all_charts.sh`, then go to Home -> Manage: select "Dashboards" dashboard, and click star icon to make it favorite.
