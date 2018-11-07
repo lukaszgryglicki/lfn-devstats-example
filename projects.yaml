@@ -12,3 +12,15 @@ projects:
     main_repo: 'Homebrew/brew'
     annotation_regexp: '^\d+\.\d+\.\d+$'
     files_skip_pattern: ''
+  lfn:
+    order: 2
+    name: Linux Foundation Networking
+    status: "-"
+    command_line:
+      - 'iovisor,mininet,opennetworkinglab,opensecuritycontroller,open-switch,p4lang,openbmp,tungstenfabric,opencord'
+    start_date: 2014-01-01T00:00:00Z
+    join_date: null
+    psql_db: lfn
+    main_repo: 'iovisor/bcc'
+    annotation_regexp: '^v\d+\.\d+\.\d+$'
+    files_skip_pattern: ''
