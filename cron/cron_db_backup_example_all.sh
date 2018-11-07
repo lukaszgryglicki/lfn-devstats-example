@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ -z "$ONLY" ]
 then
-  all=`cat ./devel/all_projects.txt`
+  all=`cat /etc/gha2db/all_projects.txt`
 else
   all=$ONLY
 fi
