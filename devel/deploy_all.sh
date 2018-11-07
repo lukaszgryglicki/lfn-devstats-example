@@ -43,9 +43,10 @@ then
 fi
 
 PROJ=homebrew PROJDB=homebrew PROJREPO="Homebrew/brew" ORGNAME="Homebrew" PORT=3001 ICON="-" GRAFSUFF=homebrew GA="-" ./devel/deploy_proj.sh || exit 2
+PROJ=lfn PROJDB=lfn PROJREPO="iovisor/bcc" ORGNAME="Linux Foundation Networking" PORT=3002 ICON="-" GRAFSUFF=lfn GA="-" ./devel/deploy_proj.sh || exit 3
 
 if [ -z "$SKIPVARS" ]
 then
-  ./devel/vars_all.sh || exit 3
+  ./devel/vars_all.sh || exit 4
 fi
 echo "$0: All deployments finished"

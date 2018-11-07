@@ -57,6 +57,7 @@ Prerequisites:
     - `service grafana-server stop` - stop default Grafana, we only need it as a source of configuration, binaries etc.
 10. Run automatic deploy
     - `PG_PASS=... PG_PASS_RO=... PG_PASS_TEAM=... ./deploy.sh`.
+    - If you are adding next project use `PG_PASS=... ./deploy_next.sh` instead.
     - You can also take a look at DevStats' `ADDING_NEW_PROJECT.md` file for more info about setting up new projects.
     - You should end up with Grafana running on port 3001 on your server's IP: `http://X.Y.Z.V:3001`.
     - This deployment uses `147.75.105.130:3001`.
