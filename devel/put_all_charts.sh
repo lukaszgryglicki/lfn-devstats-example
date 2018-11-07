@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ -z "$ONLY" ]
 then
-  all="homebrew"
+  all=`cat ./devel/all_projects.txt`
 else
   all=$ONLY
 fi

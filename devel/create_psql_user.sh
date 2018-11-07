@@ -13,7 +13,8 @@ fi
 
 if [ -z "$ONLY" ]
 then
-  all="homebrew devstats"
+  projs=`cat ./devel/all_projects.txt`
+  all="$projs devstats"
 else
   all=$ONLY
 fi

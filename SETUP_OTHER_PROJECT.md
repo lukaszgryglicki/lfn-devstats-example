@@ -3,7 +3,7 @@
 This example deployment uses Homebrew project. To run DevStats on the other project do:
 
 - In all steps: note that you have a lower-case project name `homebrew` and full name `Homebrew` (for example used as Grafana Org name etc).
-- Update `grafana.sh`, vim: `s/homebrew/your_project/g`.
+- Update `devel/all_projects.txt`, vim: `s/homebrew/your_project/g`.
 - Update `projects.yaml` to contain your new project data.
 - Update `devel/deploy_all.sh` search for `omebrew` and replace with your project. 
 - Update `devel/get_all_sqlite_jsons.sh`, `devel/put_all_charts.sh`, `devel/add_single_metric_all.sh`, `devel/create_psql_user.sh`.
