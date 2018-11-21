@@ -1,4 +1,4 @@
-# Example DevStats deployment - Homebrew
+# Example DevStats deployment - The Linux Foundation Projects (some)
 
 This is installed [here](http://147.75.105.130:3002), it uses neither DNS nor SSL.
 
